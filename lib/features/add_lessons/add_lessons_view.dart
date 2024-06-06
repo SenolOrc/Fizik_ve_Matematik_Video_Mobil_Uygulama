@@ -183,7 +183,6 @@ class _AddLessonsViewState extends ConsumerState<AddLessonsView> {
                     icon: const Icon(Icons.save),
                     label: const Text('Kaydet'),
                   ),
-                  
                 ],
               ),
             ),
@@ -276,7 +275,7 @@ class _AddLessonsViewState extends ConsumerState<AddLessonsView> {
       items: currentKonuBasliklari!.map((String value) {
         return DropdownMenuItem<String>(
           value: value,
-          child: Text(value),
+          child: Expanded(child: Text(value)),
         );
       }).toList(),
     );

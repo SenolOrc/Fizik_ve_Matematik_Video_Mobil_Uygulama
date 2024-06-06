@@ -39,7 +39,7 @@ class _LessonViewState extends ConsumerState<LessonView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Konu Başlıkları'),
+        title: const Text('Kazanım Başlıkları'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(6.0),

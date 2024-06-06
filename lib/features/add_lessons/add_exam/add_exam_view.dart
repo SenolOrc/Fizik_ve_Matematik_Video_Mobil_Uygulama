@@ -150,11 +150,6 @@ class _AddExamViewState extends ConsumerState<AddExamView> {
                             onPressed: _viewModel.onPressedNextQuestion,
                             icon: const Icon(Icons.arrow_forward),
                             label: const Text('Sonraki Soru')),
-                      ElevatedButton(
-                          onPressed: () async {
-                            await _viewModel.onPressedSave(ref, context);
-                          },
-                          child: const Text('lolo'))
                     ]),
                     if (_viewModel.currentQuestion ==
                         _viewModel.amountOfQuestion)
